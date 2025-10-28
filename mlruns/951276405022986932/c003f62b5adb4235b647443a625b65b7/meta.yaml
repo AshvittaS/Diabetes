@@ -1,0 +1,14 @@
+artifact_uri: file:///C:\Users\Ashvitta\OneDrive\Desktop\gitprograms\Diabetes\mlruns/951276405022986932/c003f62b5adb4235b647443a625b65b7/artifacts
+end_time: 1761665108422
+entry_point_name: ''
+experiment_id: '951276405022986932'
+lifecycle_stage: active
+run_id: c003f62b5adb4235b647443a625b65b7
+run_name: Logistic Regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761665108316
+status: 3
+tags: []
+user_id: Ashvitta

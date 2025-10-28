@@ -1,0 +1,15 @@
+creation_timestamp: 1761665213205
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1761665213205
+model_id: m-04fc4653e8704c7fbdcd979b328fbc98
+name: Diabetes_Best_Model
+run_id: a335e2a6491d4b4398453d77453c2247
+run_link: null
+source: models:/m-04fc4653e8704c7fbdcd979b328fbc98
+status: READY
+status_message: null
+storage_location: file:///C:\Users\Ashvitta\OneDrive\Desktop\gitprograms\Diabetes\mlruns/951276405022986932/models/m-04fc4653e8704c7fbdcd979b328fbc98/artifacts
+user_id: null
+version: 1

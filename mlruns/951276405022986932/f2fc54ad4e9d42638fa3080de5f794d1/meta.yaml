@@ -1,0 +1,14 @@
+artifact_uri: file:///C:\Users\Ashvitta\OneDrive\Desktop\gitprograms\Diabetes\mlruns/951276405022986932/f2fc54ad4e9d42638fa3080de5f794d1/artifacts
+end_time: 1761665484959
+entry_point_name: ''
+experiment_id: '951276405022986932'
+lifecycle_stage: active
+run_id: f2fc54ad4e9d42638fa3080de5f794d1
+run_name: Run_2025-10-28_21-00-29
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761665429647
+status: 3
+tags: []
+user_id: Ashvitta

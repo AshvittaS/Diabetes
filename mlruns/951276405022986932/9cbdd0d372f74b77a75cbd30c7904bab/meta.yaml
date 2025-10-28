@@ -1,0 +1,14 @@
+artifact_uri: file:///C:\Users\Ashvitta\OneDrive\Desktop\gitprograms\Diabetes\mlruns/951276405022986932/9cbdd0d372f74b77a75cbd30c7904bab/artifacts
+end_time: 1761663677430
+entry_point_name: ''
+experiment_id: '951276405022986932'
+lifecycle_stage: active
+run_id: 9cbdd0d372f74b77a75cbd30c7904bab
+run_name: XGBoost
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761663668946
+status: 3
+tags: []
+user_id: Ashvitta

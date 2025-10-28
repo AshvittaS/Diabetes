@@ -1,0 +1,14 @@
+artifact_uri: file:///C:\Users\Ashvitta\OneDrive\Desktop\gitprograms\Diabetes\mlruns/951276405022986932/e52d724d9f7a453c9eb7263cc3d736c2/artifacts
+end_time: 1761663685505
+entry_point_name: ''
+experiment_id: '951276405022986932'
+lifecycle_stage: active
+run_id: e52d724d9f7a453c9eb7263cc3d736c2
+run_name: Model_Comparison
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761663620846
+status: 3
+tags: []
+user_id: Ashvitta

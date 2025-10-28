@@ -1,0 +1,14 @@
+artifact_uri: file:///C:\Users\Ashvitta\OneDrive\Desktop\gitprograms\Diabetes\mlruns/951276405022986932/6fb02d0e3d2945f786698fd768e863a9/artifacts
+end_time: 1761664500138
+entry_point_name: ''
+experiment_id: '951276405022986932'
+lifecycle_stage: active
+run_id: 6fb02d0e3d2945f786698fd768e863a9
+run_name: Gradient Boosting
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761664491245
+status: 3
+tags: []
+user_id: Ashvitta

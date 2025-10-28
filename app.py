@@ -2,49 +2,43 @@ import gradio as gr
 import pickle
 import numpy as np
 import pandas as pd
+import mlflow
+import mlflow.sklearn
+import os
 
-with open('Transformation.pkl', 'rb') as f:
+mlflow.set_tracking_uri(f"file:///{os.getcwd()}/mlruns")
+
+with open("Transformation.pkl", "rb") as f:
     pt = pickle.load(f)
 
-with open('scaler.pkl', 'rb') as f:
+with open("scaler.pkl", "rb") as f:
     scaler = pickle.load(f)
 
-with open('best_model.pkl', 'rb') as f:
-    model = pickle.load(f)
+model = mlflow.sklearn.load_model("models:/Diabetes_Best_Model/Production")
 
 cols = [
-    'Pregnancies',
-    'Glucose',
-    'BloodPressure',
-    'SkinThickness',
-    'Insulin',
-    'BMI',
-    'DiabetesPedigreeFunction',
-    'Age'
+    "Pregnancies", "Glucose", "BloodPressure", "SkinThickness",
+    "Insulin", "BMI", "DiabetesPedigreeFunction", "Age"
+]
+
+continuous_cols = [
+    "Glucose", "BloodPressure", "SkinThickness",
+    "Insulin", "BMI", "DiabetesPedigreeFunction", "Age"
 ]
 
 def predict_diabetes(Gender, Pregnancies, Glucose, BloodPressure, SkinThickness,
                      Insulin, BMI, DiabetesPedigreeFunction, Age):
- 
-    data = pd.DataFrame([[Pregnancies, Glucose, BloodPressure, SkinThickness,
-                          Insulin, BMI, DiabetesPedigreeFunction, Age]],
-                        columns=cols)
-    
-    con_col = ['Glucose', 'BloodPressure', 'SkinThickness',
-               'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age']
-    
-    data[con_col] = pt.transform(data[con_col])
-    data[cols] = scaler.transform(data[cols])
-    
-    pred = model.predict(data)[0]
-    
-    pronoun = "He" if Gender.lower() == "male" else "She"
 
-    if pred == 1:
-        result = f" {pronoun} has diabetes."
-    else:
-        result = f" {pronoun} does not have diabetes."
-    
+    data = pd.DataFrame([[Pregnancies, Glucose, BloodPressure, SkinThickness,
+                          Insulin, BMI, DiabetesPedigreeFunction, Age]], columns=cols)
+
+    # Apply same transformations as training
+    data[continuous_cols] = pt.transform(data[continuous_cols])
+    data[cols] = scaler.transform(data[cols])
+
+    pred = model.predict(data)[0]
+    pronoun = "He" if Gender.lower() == "male" else "She"
+    result = f"{pronoun} {'has' if pred == 1 else 'does not have'} diabetes."
     return result
 
 interface = gr.Interface(
@@ -61,8 +55,8 @@ interface = gr.Interface(
         gr.Number(label="Age", precision=0)
     ],
     outputs=gr.Textbox(label="Prediction Result"),
-    title="🩺 Diabetes Prediction App",
-    description="Enter the details below to predict whether the person has diabetes or not."
+    title="🩺 Diabetes Prediction App (MLflow)",
+    description="Model served from MLflow Registry. Enter details to predict whether the person has diabetes or not."
 )
 
 if __name__ == "__main__":

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:\Users\Ashvitta\OneDrive\Desktop\gitprograms\Diabetes\mlruns/951276405022986932/3506a141a5cd4cdf82d3706094a3cd86/artifacts
+end_time: 1761665734802
+entry_point_name: ''
+experiment_id: '951276405022986932'
+lifecycle_stage: active
+run_id: 3506a141a5cd4cdf82d3706094a3cd86
+run_name: AdaBoost
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761665729147
+status: 3
+tags: []
+user_id: Ashvitta

@@ -1,0 +1,10 @@
+artifact_location: file:///C:\Users\Ashvitta\OneDrive\Desktop\gitprograms\Diabetes\mlruns/951276405022986932/models/m-20c74b3e5a614dfb9159b6a002a2069b/artifacts
+creation_timestamp: 1761665716998
+experiment_id: '951276405022986932'
+last_updated_timestamp: 1761665722869
+model_id: m-20c74b3e5a614dfb9159b6a002a2069b
+model_type: null
+name: model
+source_run_id: e218b88b9baa4320b2867cc4144b41ad
+status: 2
+status_message: null

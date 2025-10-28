@@ -1,0 +1,14 @@
+artifact_path: file:///C:\Users\Ashvitta\OneDrive\Desktop\gitprograms\Diabetes\mlruns/951276405022986932/models/m-e44c4f93b4e34abd90e0de7500dbe4cb/artifacts
+flavors:
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.1
+mlflow_version: 3.5.1
+model_id: m-e44c4f93b4e34abd90e0de7500dbe4cb
+model_size_bytes: 4
+model_uuid: m-e44c4f93b4e34abd90e0de7500dbe4cb
+prompts: null
+run_id: 3d03b86da9954352a935270aa75fef78
+utc_time_created: '2025-10-28 15:14:04.642283'

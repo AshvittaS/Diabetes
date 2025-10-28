@@ -1,0 +1,14 @@
+artifact_uri: file:///C:\Users\Ashvitta\OneDrive\Desktop\gitprograms\Diabetes\mlruns/951276405022986932/ed33380d714341788f0d3a74b4ec41e9/artifacts
+end_time: 1761665132759
+entry_point_name: ''
+experiment_id: '951276405022986932'
+lifecycle_stage: active
+run_id: ed33380d714341788f0d3a74b4ec41e9
+run_name: Naive Bayes
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761665126695
+status: 3
+tags: []
+user_id: Ashvitta

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:\Users\Ashvitta\OneDrive\Desktop\gitprograms\Diabetes\mlruns/951276405022986932/37825f6c0b2a4fc9bc42c0ca4cfd5fcb/artifacts
+end_time: 1761665188542
+entry_point_name: ''
+experiment_id: '951276405022986932'
+lifecycle_stage: active
+run_id: 37825f6c0b2a4fc9bc42c0ca4cfd5fcb
+run_name: Random Forest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761665182494
+status: 3
+tags: []
+user_id: Ashvitta
